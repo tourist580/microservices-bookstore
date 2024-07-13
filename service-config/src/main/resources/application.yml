@@ -22,13 +22,5 @@ spring:
   #    authentication: TOKEN
   #    token: <root-token>
     git:
-      uri: file://${user.home}/personal/config-repo
+      uri: https://github.com/tourist580/config-server
   #    order: 2
-  zipkin:
-    baseUrl: http://127.0.0.1:9411/
-
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka

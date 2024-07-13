@@ -5,8 +5,6 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.Optional;
 
-import javax.annotation.PostConstruct;
-
 import com.sergio.bookstore.service.user.dto.CredentialsDto;
 import com.sergio.bookstore.service.user.dto.UserCreationDto;
 import com.sergio.bookstore.service.user.dto.UserDto;
@@ -17,6 +15,7 @@ import com.sergio.bookstore.service.user.repositories.UserRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
